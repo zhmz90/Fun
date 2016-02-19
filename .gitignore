@@ -1,6 +1,7 @@
 *.jl.cov
 *.jl.*.cov
 *.jl.mem
+.gitignore~
 *.jl~
 *.*#
 *.#
@@ -8,3 +9,4 @@
 *.csv
 *.csv#
 *.csv~
+*.md~
