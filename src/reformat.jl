@@ -26,14 +26,8 @@ function reformat(data::Array{ASCIIString,2})
         end
         result[ind,:] = deepcopy(vcat(id,vec))
     end
-
-    #index array with id
-    ret_dict = Dict{ASCIIString,Array{ASCIIString,1}}()
-    for i = 1:size(result,1)
-        ret_dict[result[i,1]] = result[i,2:end]
-    end
     
-    result,ret_dict
+    result
 end
 
 function reformat3(data::Array{ASCIIString,2})
@@ -65,14 +59,8 @@ function reformat3(data::Array{ASCIIString,2})
         end
         result[ind,:] = deepcopy(vcat(id,vec))
     end
-
-    #index array with id
-    ret_dict = Dict{ASCIIString,Array{ASCIIString,1}}()
-    for i = 1:size(result,1)
-        ret_dict[result[i,1]] = result[i,2:end]
-    end
     
-    result,ret_dict
+    result
 end
 
 export reformat,reformat3
